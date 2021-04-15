@@ -1,0 +1,1 @@
+<? echo "php serves content\n";

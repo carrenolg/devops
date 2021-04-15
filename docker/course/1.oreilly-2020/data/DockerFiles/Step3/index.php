@@ -1,0 +1,1 @@
+<? echo "apache serves content\n";
