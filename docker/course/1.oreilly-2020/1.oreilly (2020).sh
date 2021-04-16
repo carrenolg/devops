@@ -32,3 +32,14 @@ $ docker build -t myphpapp .
 # user/image_name:tag
 $ docker tag mycurl carrenolg/mycurl:latest
 $ docker push
+
+# working with docker compose
+$ docker-compose up
+# --build, rebuilding images
+$ docker-compose up --build
+# show containers
+$ docker-compose push
+# remove containers
+$ docker-compose down
+# run container
+$ docker-compose run --rm "id/name"
