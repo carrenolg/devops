@@ -1,0 +1,1 @@
+<? echo "docker-compose is up!\n\n";

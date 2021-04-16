@@ -27,6 +27,7 @@ $ docker run -d -p 8080:80 httpd
 $ docker build -t myphpapp .
 
 # upload image to docker hub
+# login from cli
 # mycurl (local image)
 # user/image_name:tag
 $ docker tag mycurl carrenolg/mycurl:latest
