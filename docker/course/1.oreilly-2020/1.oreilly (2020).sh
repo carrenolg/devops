@@ -38,8 +38,10 @@ $ docker-compose up
 # --build, rebuilding images
 $ docker-compose up --build
 # show containers
-$ docker-compose push
+$ docker-compose ps
 # remove containers
 $ docker-compose down
 # run container
 $ docker-compose run --rm "id/name"
+
+# working with networks
