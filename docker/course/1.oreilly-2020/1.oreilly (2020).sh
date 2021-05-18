@@ -12,6 +12,9 @@ $ docker run --rm -v $PWD:/files klutchell/rar a /files/myrar.rar /files/myfile.
 # -w (working directory)
 $ docker run --rm -v $PWD:/files -w /files klutchell/rar a myrar.rar myfile.txt
 
+# copy files from host to container
+$ docker cp path/file.txt 0537f9e0718c:/home/app/web/auth
+
 # run apache container and get into it
 $ docker run -d httpd
 $ docker exec -it 63 /bin/bash
