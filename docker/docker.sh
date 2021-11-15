@@ -7,3 +7,6 @@ $ docker exec -it 3239ecaf53ad /bin/bash
 
 # create resources
 $ docker volume create "name"
+
+# remove all containers
+$ docker rm -f $(docker ps -a -q)

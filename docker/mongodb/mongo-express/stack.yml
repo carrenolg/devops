@@ -1,0 +1,21 @@
+# Use root/example as user/password credentials
+# mongod --auth is setting with this config
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    container_name: mongodb
+    ports:
+      - 27017:27017 # expose outside (on host)
+    env_file: .env
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    container_name: mongo-express
+    ports:
+      - 8081:8081
+    env_file: express.env
