@@ -8,6 +8,8 @@ services:
     restart: always
     ports:
       - 27017:27017 # expose outside (on host)
+    volumes:
+      - mongodata:/data/db
 
   mongo-express:
     image: mongo-express
