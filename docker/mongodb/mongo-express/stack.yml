@@ -3,19 +3,23 @@
 version: '3.1'
 
 services:
-
   mongo:
-    image: mongo
+    image: mongo:4.4.10-focal
     restart: always
     container_name: mongodb
+    env_file: .env
     ports:
       - 27017:27017 # expose outside (on host)
-    env_file: .env
-
+    volumes:
+      - mongodata:/data/db
+  
   mongo-express:
     image: mongo-express
     restart: always
     container_name: mongo-express
+    env_file: express.env
     ports:
       - 8081:8081
-    env_file: express.env
+
+volumes: 
+  mongodata:
